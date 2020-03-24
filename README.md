@@ -15,3 +15,6 @@ forward the packets to the target and its router.
 - Used the network scanner I previously built to find the MAC address of the target.
 - To check the ARP table to see if it worked:
     - root@kali:~# arp -a
+
+# Usage
+python3 arpPosion.py -t ##.#.#.# -g ##.#.#.#
