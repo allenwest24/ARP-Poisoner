@@ -1,5 +1,3 @@
-# NOT FINISHED YET
-
 import scapy.all as scapy
 import time
 import optparse
